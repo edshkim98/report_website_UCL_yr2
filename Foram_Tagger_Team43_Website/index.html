@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Team 43 Foram Tagger</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script>
+		var renderPage = true;
+	if(navigator.userAgent.indexOf('MSIE')!==-1
+		|| navigator.appVersion.indexOf('Trident/') > 0){
+   		/* Microsoft Internet Explorer detected in. */
+   		alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+   		renderPage = false;
+	}
+	</script>
+</head>
+
+<body>
+
+	<!-- Page Content -->
+	<div class="container-fluid tm-main">
+		<div class="row tm-main-row">
+			<!-- Sidebar -->
+			<div id="tmSideBar" class="col-xl-3 col-lg-4 col-md-12 col-sm-12 sidebar">
+
+				<button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
+
+				<div class="inner">
+					<nav id="tmMainNav" class="tm-main-nav">
+						<ul>
+							<li>
+								<a href="#intro" id="tmNavLink1" class="scrolly active" data-page="#tm-section-1">
+									<span>Introduction</span>
+								</a>
+							</li>
+							<li>
+								<a href="#requirements" id="tmNavLink2.1" class="scrolly" data-page="#tm-section-6">
+									<span>Requirements</span>
+								</a>
+							</li>
+							<li>
+								<a href="#research" id="tmNavLink2.2" class="scrolly" data-page="#tm-section-8">
+									<span>Research</span>
+								</a>
+							</li>
+								<a href="#products" id="tmNavLink2" class="scrolly" data-page="#tm-section-2" data-page-type="carousel">
+									<span>Our Prototype</span>
+								</a>
+							</li>
+							<li>
+								<a href="#HCI" id="tmNavLink3.1" class="scrolly" data-page="#tm-section-7">
+									<span>HCI</span>
+								</a>
+							</li>
+							<li>
+								<a href="#team" id="tmNavLink3" class="scrolly" data-page="#tm-section-3">
+									<span>Our Team</span>
+								</a>
+							</li>
+							<li>
+								<!--<a href="#application" class="scrolly" data-page="#tm-section-4">
+									<span>Our Application</span>
+								</a>
+							</li>
+							<li> <-->
+								<!--<a href="#contact" class="scrolly" data-page="#tm-section-5">
+									<span>Progress</span>
+								</a>
+							</li> <-->
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">
+
+					<!-- section 1 -->
+					<section id="tm-section-1" class="tm-section">
+						<div class="ml-auto">
+							<header class="mb-4"><h1 class="tm-text-shadow">Foraminifera Tagger</h1></header>
+							<img src="img/foram1.jpg" title="foram" alt="">
+							<img src="img/image_segmentaion.png" title="image segmentation" alt="">
+							<p class="mb-5 tm-font-small">UCL Second Year IXN Project with UCL Earth Science department.<br  />This project is a collaboration between Earth Science and Computer Science<br  />The main goal of the project is to produce a Deep Learning System for Foraminifera-Tagger<br />as well as being able to store and retrieve the forams from DB our team developed.<br  />Click 'Learn More' button below to see our Key features of our prject.</p>
+							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Learn More</a>
+						</div>
+					</section>
+
+					<!-- section 2.1 -->
+					<section id="tm-section-6" class="tm-section">
+						<div class="row mb-4">
+							<header class="col-xl-12"><h2 class="tm-text-shadow">Requirements</h2></header>
+						</div>
+						<div class="tm-bg-transparent-black tm-contact-box-pad">
+							<div class="row tm-page-4-content">
+
+								<div class="col-md-12 col-sm-12 tm-contact-col">
+
+									<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #696969;
+}
+</style>
+</head>
+<body>
+
+<h2>Introduction</h2>
+<p> Foraminifera is microscopic fossils which are about 0.5mm sized. Micropalaeontologists research these by analysing and collecting forams from various depths below the sea-bottom, to forensically reconstruct millions of years of planet-scale events. They are collected and photographed under a microscope, but they also need to be: </br><b>-</b>digitally segmented from each other</br><b>-</b>sotred in a DB with meta-info</br><b>-</b>tagged with morphological information -retrieved from the DB by Micropalaeontologists. </p>
+
+<p>Push the button:</p>
+<button class="collapsible">Main goal</button>
+<div class="content">
+	<p>Our main goal is to create an application of automated Foraminifera-Tagger by implementing neural network.
+
+</div>
+<button class="collapsible">Persona</button>
+<div class="content">
+  <img src="img/persona.jpg" alt="persona_image" /></br>
+</div>
+<button class="collapsible">MosCoW requirements</button>
+<div class="content">
+	<b>Must Have</b></br>
+	<p>-The ability to pick out individual forams when given an image of a group of forams</br>-The ability to identify the modern species of forams when give an image</br>-Allow users to make corrections when forams are incorrectly identified</br>Store the pictures of forams in a database</br>Allow the users to search for forams based on certain criteria e.g. species</br></p>
+	<b>Should Have</b></br>
+	<p>-The ability for the machine learning model to learn when a correction by the user has been made</br>-The ability to identify all species of forams when give an image</br></p>
+	<b>Could Have</b>
+	<p>-Different views for the gallery</p>
+
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+							</div>
+							</div>
+						</div>
+					</section>
+					<!-- section 2.2 -->
+					<section id="tm-section-8" class="tm-section">
+						<div class="row mb-4">
+							<header class="col-xl-12"><h2 class="tm-text-shadow">Research</h2></header>
+
+						</div>
+						<div class="tm-bg-transparent-black tm-contact-box-pad">
+							<div class="row tm-page-4-content">
+
+								 <div class="col-md-12 col-sm-12 tm-contact-col">
+									 <p>There are many other frameworks available such as Django, Flask, Codelgniter and Laravel.</br>
+										  After team discussion, we concluded to use Django since our back-end will be written in python.</br>
+											Django is also written by python and it is easy to use with mysql database.</br>
+											We used openCV for image semgmentation as it is one of the largest open source library which provides</br>
+											many image processing libraries.</br>
+											We are also going to use pytorch for building machine learning algorithms as there are</br>
+											already many neural network libraries available in pytorch and it is also written in python.</br></p>
+									<h4>Reference</h4>
+									<a href="http://www.mikrotax.org/pforams/" title="Foram database web"</a><p>http://www.mikrotax.org/pforams/</p>
+								 </div>
+							</div>
+						</div>
+					</section>
+					<!-- section 2 -->
+					<section id="tm-section-2" class="tm-section tm-section-carousel">
+						<div>
+							<header class="mb-4"><h2 class="tm-text-shadow">Our Prototype</h2></header>
+							<p> After talking with ours users, we made refinements accordingly. We finalised our gallery and search result prototype design but went back to the “sketching” and “considering alternative” stage and re-designed the new homepage with the dragging area only. We believe this will make user experience more smooth and be more in style with the rest of prototype designs.
+							</p>
+								<div class="tm-img-slider">
+									<a href="img/Home_page.jpg" title="Home Page with search function"><img src="img/Home_page.jpg" alt="Image" class="img-fluid"></a>
+									<a href="img/Search_Page.jpg" title="Search funtion with results displayed"><img src="img/Search_Page.jpg" alt="Image" class="img-fluid"></a>
+									<a href="img/Start_Page.jpg" title="Home Page with function selection"><img src="img/Start_Page.jpg" alt="Image" class="img-fluid"></a>
+									<a href="img/Results1.jpg" title="Tagged results in list format"><img src="img/Results1.jpg" alt="Image" class="img-fluid"></a>
+									<a href="img/Results2.jpg" title="Tagged results in carousel format"><img src="img/Results2.jpg" alt="Image" class="img-fluid"></a>
+								</div>
+						</div>
+					</section>
+
+					<!-- section 3.1 -->
+					<section id="tm-section-7" class="tm-section">
+						<div class="row mb-4">
+							<header class="col-xl-12"><h2 class="tm-text-shadow">HCI</h2></header>
+						</div>
+						<div class="tm-bg-transparent-black tm-contact-box-pad">
+							<div class="row tm-page-4-content">
+								<div class="col-md-6 col-sm-12 tm-contact-col">
+								<style>
+								.collapsible2 {
+									background-color: #777;
+									color: white;
+									cursor: pointer;
+									padding: 18px;
+									width: 100%;
+									border: none;
+									text-align: left;
+									outline: none;
+									font-size: 15px;
+								}
+
+								.active, .collapsible2:hover {
+									background-color: #555;
+								}
+
+								.content {
+									padding: 0 18px;
+									display: none;
+									overflow: hidden;
+									background-color: #696969;
+								}
+								</style>
+								</head>
+								<body>
+
+								<h2>Wireframe</h2>
+								<p>Based on the main functions of our application and the possible user preferences we estimated after analysing the given information, we came out with simple but personalised sketches that should be ideal for professionals to use and to deal with a large amount of input data.
+								 </p>
+
+								<p>Push the button:</p>
+								<button class="collapsible2">Wireframe1</button>
+								<div class="content">
+									 <img src="img/wireframe1.jpeg" title="wireframe1" alt="wireframe_image" /></br>
+								</div>
+								<button class="collapsible2">Wireframe2</button>
+								<div class="content">
+									<img src="img/wireframe2.jpeg" title="wireframe2" alt="wireframe_image" /></br>
+								</div>
+								<h2>Alternate design</h2>
+								<p>Considering the huge database which would be built up along with the use of application, we believe the search result page or the gallery page are really important. We discussed and came out with two designs with different characteristics, one more lively one more organised, to ensure various preferences of the users could be catered. </p>
+
+								<button class="collapsible2">Alternate design1</button>
+								<div class="content">
+										<img src="img/design1.jpg" title="alternate design1" alt="design_image" /></br>
+
+								</div>
+								<button class="collapsible2">Alternate design2</button>
+								<div class="content">
+									<img src="img/design2.jpg" title="alternate design2" alt="design_image" /></br>
+								</div>
+								<script>
+								var coll = document.getElementsByClassName("collapsible2");
+								var i;
+
+								for (i = 0; i < coll.length; i++) {
+								  coll[i].addEventListener("click", function() {
+								    this.classList.toggle("active");
+								    var content = this.nextElementSibling;
+								    if (content.style.display === "block") {
+								      content.style.display = "none";
+								    } else {
+								      content.style.display = "block";
+								    }
+								  });
+								}
+								</script>
+
+
+					</section>
+
+					<!-- section 3 -->
+					<section id="tm-section-3" class="tm-section">
+						<div class="row mb-4">
+							<header class="col-xl-12"><h2 class="tm-text-shadow">Our Team</h2></header>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
+								<div class="media tm-bg-transparent-black tm-border-white">
+									<img src="img/Zongyou.jpg" class="mr-4 tm-icon-circled tm-icon-media"></img>
+									<div class="media-body">
+										<h3>Zong-you Chua</h3>
+										<p>Computer Science Second Year Undergraduate</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
+								<div class="media tm-bg-transparent-black tm-border-white">
+									<img src="img/seunghoi.jpg" class="mr-4 tm-icon-circled tm-icon-media"></img>
+									<div class="media-body">
+										<h3>SH Kim</h3>
+										<p>Computer Science Second Year Undergraduate</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
+								<div class="media tm-bg-transparent-black tm-border-white">
+									<img src="img/wenwen.jpg" class="mr-4 tm-icon-circled tm-icon-media"></img>
+									<div class="media-body">
+										<h3>Wenwen Zheng</h3>
+										<p>Computer Science Second Year Undergraduate</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- section 4 -->
+					<section id="tm-section-4" class="tm-section">
+						<div class="row mb-4">
+							<header class="col-xl-12"><h2 class="tm-text-shadow">Our Application</h2></header>
+						</div>
+						<div class="tm-bg-transparent-black tm-contact-box-pad">
+							<div class="row tm-page-4-content">
+								<div class="col-md-6 col-sm-12 tm-contact-col">
+									<h3>Week One</h3>
+									<p>Our To-Do: </br> - Finish the website </p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- section 5 -->
+					<section id="tm-section-5" class="tm-section">
+						<div class="row mb-4">
+							<header class="col-xl-12"><h2 class="tm-text-shadow">Our Progress</h2></header>
+						</div>
+						<div class="tm-bg-transparent-black tm-contact-box-pad">
+							<div class="row tm-page-4-content">
+
+								<div class="col-md-12 col-sm-12 tm-contact-col">
+									<h3>Week One & Two</h3></br>
+									<p>This is the first week of this project.  After reading the project requirements individually, we met up and wrote out our initial understandings of the project as well as the questions we are gonna clarify with our clients during our first client meeting. During our second team meeting, we analysed our users’ needs based on the information available and discussed the alternative designs of our user interface. Eventually we successfully prepared a set of design sketches to show our client and users. </p>
+									<b>Completed tasks:</b></br>
+									<p>- Analysis of requirements</br>- List of queries for first clients & users</br>- Initial sketches of our application</br>- Alternative design sketches</br>- Meet with clients and users</br>- Initial draft of Powerpoint slides
+									</p>
+									<b>12. Oct. 2018: First Client & Users Meeting</b>
+									<p>We had this first client & users meeting with the professors from both Earth Science department and Computer Science department together with our users who are the researchers working on some foram related projects. Through this meeting, we agreed on the main functions of our application, the flow of how it is supposed to run and the initial user interface. We also brought up the issue of the method of collecting the initial training data. While waiting for the reply on that, we now have a new direction and will try to write test training programmes and apply them on the sample images we obtained. </p>
+								</br>
+								</div>
+
+								<div class="col-md-12 col-sm-12 tm-contact-col">
+									<h3>Week Three & Four</h3></br>
+									<p>Our team overall works very well in terms of distributing and completing the tasks. We have divided tasks into three and have been working on our report to show full stages in the development life cycle. We have been discussing some issues like planning for usability testing, prototype evaluation and re-confirming user requirements (MoSCoW) based on the information we gathered from the meeting with the client meeting.  After going through a number of refining processes and discussion, we successfully completed the report in 23rd Oct.</p>
+									<b>Completed tasks:</b></br>
+									<p>- Refining user requirements</br>- Powerpoint slides report which includes usability testing, drawing wireframe and user personas</br>- Prototype design & evaluation</br></p>
+								</br>
+								</div>
+
+								<div class="col-md-12 col-sm-12 tm-contact-col">
+									<h3>Week Five & Six</h3>
+									<p>For the past week, our team has been continuing our research into various machine learning algorithms. We looked into all the resources that our TA provided us, such as MNIST tutorials. This was particularly useful as MNIST also deals with image recognition. </p>
+									<b>Completed tasks:</b></br>
+									<p>- Setting up the report website</br>- Future meeting with our client has been set</br>- Requirements have been completely established</br>	</p>
+								</br>
+								</div>
+
+
+							</div>
+						</div>
+					</section>
+				</div>	<!-- .tm-content -->
+			</div>	<!-- row -->
+		</div>
+
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script> <!-- Slick Carousel -->
+
+		<script>
+
+		var sidebarVisible = false;
+		var currentPageID = "#tm-section-1";
+
+		// Setup Carousel
+		function setupCarousel() {
+
+			// If current page isn't Carousel page, don't do anything.
+			if($('#tm-section-2').css('display') == "none") {
+			}
+			else {	// If current page is Carousel page, set up the Carousel.
+
+				var slider = $('.tm-img-slider');
+				var windowWidth = $(window).width();
+
+				if (slider.hasClass('slick-initialized')) {
+					slider.slick('destroy');
+				}
+
+				if(windowWidth < 640) {
+					slider.slick({
+	              		dots: true,
+	              		infinite: false,
+	              		slidesToShow: 1,
+	              		slidesToScroll: 1
+	              	});
+				}
+				else if(windowWidth < 992) {
+					slider.slick({
+	              		dots: true,
+	              		infinite: false,
+	              		slidesToShow: 2,
+	              		slidesToScroll: 1
+	              	});
+				}
+				else {
+					// Slick carousel
+	              	slider.slick({
+	              		dots: true,
+	              		infinite: false,
+	              		slidesToShow: 3,
+	              		slidesToScroll: 2
+	              	});
+				}
+
+				// Init Magnific Popup
+				$('.tm-img-slider').magnificPopup({
+				  delegate: 'a', // child items selector, by clicking on it popup will open
+				  type: 'image',
+				  gallery: {enabled:true}
+				  // other options
+				});
+
+      		}
+  		}
+
+  		// Setup Nav
+  		function setupNav() {
+  			// Add Event Listener to each Nav item
+	     	$(".tm-main-nav a").click(function(e){
+	     		e.preventDefault();
+
+		    	var currentNavItem = $(this);
+		    	changePage(currentNavItem);
+
+		    	setupCarousel();
+
+		    	// Hide the nav on mobile
+		    	$("#tmSideBar").removeClass("show");
+		    });
+  		}
+
+  		function changePage(currentNavItem) {
+  			// Update Nav items
+  			$(".tm-main-nav a").removeClass("active");
+     		currentNavItem.addClass("active");
+
+	    	$(currentPageID).hide();
+
+	    	// Show current page
+	    	currentPageID = currentNavItem.data("page");
+	    	$(currentPageID).fadeIn(1000);
+
+	    	// Change background image
+	    	$.backstretch("img/mountain.jpg");
+  		}
+
+  		// Setup Nav Toggle Button
+  		function setupNavToggle() {
+
+			$("#tmMainNavToggle").on("click", function(){
+				$(".sidebar").toggleClass("show");
+			});
+  		}
+
+
+  		// Everything is loaded including images.
+      	$(window).on("load", function(){
+
+      		// Render the page on modern browser only.
+      		if(renderPage) {
+				// Remove loader
+		      	$('body').addClass('loaded');
+
+		      	// Page transition
+		      	var allPages = $(".tm-section");
+
+		      	// Handle click of "Continue", which changes to next page
+		      	// The link contains data-nav-link attribute, which holds the nav item ID
+		      	// Nav item ID is then used to access and trigger click on the corresponding nav item
+		      	var linkToAnotherPage = $("a.tm-btn[data-nav-link]");
+
+			    if(linkToAnotherPage != null) {
+
+			    	linkToAnotherPage.on("click", function(){
+			    		var navItemToHighlight = linkToAnotherPage.data("navLink");
+			    		$("a" + navItemToHighlight).click();
+			    	});
+			    }
+
+					var linkToAnotherPage1 = $("a.tm-btn[data-nav-link1]");
+
+				if(linkToAnotherPage1 != null) {
+
+					linkToAnotherPage.on("click", function(){
+						var navItemToHighlight1 = linkToAnotherPage.data("navLink1");
+						$("b" + navItemToHighlight1).click();
+					});
+				}
+
+
+		      	// Hide all pages
+		      	allPages.hide();
+		      	$("#tm-section-1").fadeIn();
+		     	// Set up background first page
+		     	$.backstretch("img/mountain.jpg", {fade: 500});
+
+		     	// Setup Carousel, Nav, and Nav Toggle
+			    setupCarousel();
+			    setupNav();
+			    setupNavToggle();
+
+			    // Resize Carousel upon window resize
+			    $(window).resize(function() {
+			    	setupCarousel();
+			    });
+      		}
+		});
+
+		</script>
+	</body>
+</html>
